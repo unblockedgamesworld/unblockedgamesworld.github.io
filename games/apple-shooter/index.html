@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<meta charset="utf-8" />
+<meta http-equiv="x-ua-compatible" content="ie=edge">
+<meta id="viewport" name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui, shrink-to-fit=no" />
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black">
+<meta name="apple-mobile-web-app-title" content="Apple Shooter">
+<meta name="format-detection" content="telephone=no">
+<meta name="HandheldFriendly" content="true" />
+<meta name="viewport" content="initial-scale=1 maximum-scale=1 user-scalable=no minimal-ui shrink-to-fit=no" />
+<link rel="icon" type="image/png" href="../../images/favicon.png">
+<meta name="description" content="Apple Shooter Unblocked. Play Apple Shooter For Free Unblocked Online on Chromebook, PC in Chrome and modern browsers.">
+<link rel="canonical" href="../../game/apple-shooter/index.html" />
+<meta name="robots" content="noindex, nofollow">
+<title>Apple Shooter</title>
+<link rel="stylesheet" href="https://y8game.github.io/games/apple-shooter/assets/css/app.css" type="text/css" />
+</head>
+<body>
+<div id="content"></div>
+<div id="orientation"></div>
+<div id="loader">Loading...</div>
+<div id="dummy" style="position:fixed;right:0;bottom:0"></div>
+<script type="text/javascript">
+        var gameName = "https://y8game.github.io/games/apple-shooter/apple-shooter.min.js";
+
+
+
+
+
+
+        //This all here is for cache busting;
+        function addScript(src, buster, callback) {
+            var s = document.createElement('script');
+            s.setAttribute('src', src + '?v=' + buster);
+            if (typeof callback === 'function') {
+                s.onload = callback;
+            }
+            document.body.appendChild(s);
+        }
+
+
+        addScript('https://y8game.github.io/games/apple-shooter/version.js', Date.now(), function() {
+
+            addScript(gameName, version, function() {
+                var game = new Game.GameObjects();
+            });
+
+        });
+    </script>
+</body>
+
+</html>

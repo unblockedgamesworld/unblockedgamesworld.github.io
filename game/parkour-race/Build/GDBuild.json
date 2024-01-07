@@ -1,0 +1,15 @@
+{
+"companyName": "unconditional games",
+"productName": "Parkour Race",
+"productVersion": "0.1",
+"dataUrl": "GDBuild.data.unityweb",
+"wasmCodeUrl": "GDBuild.wasm.code.unityweb",
+"wasmFrameworkUrl": "GDBuild.wasm.framework.unityweb",
+"graphicsAPI": ["WebGL 2.0","WebGL 1.0"],
+"webglContextAttributes": {"preserveDrawingBuffer": false},
+"splashScreenStyle": "Dark",
+"backgroundColor": "#231F20",
+"developmentBuild": false,
+"multithreading": false,
+"unityVersion": "2019.3.7f1"
+}

@@ -1,0 +1,23 @@
+{
+  "short_name": "Cat Runner",
+  "name": "Cat Runner",
+  "icons": [
+    {
+      "src": "https://img.gamedistribution.com/19d2de9aa72d4e759ee141f2adf5017e-512x512.jpeg",
+      "type": "image/jpeg",
+      "sizes": "512x512",
+      "purpose": "any"
+    },
+    {
+      "src": "https://img.gamedistribution.com/19d2de9aa72d4e759ee141f2adf5017e-512x512.jpeg",
+      "type": "image/png",
+      "sizes": "144x144",
+      "purpose": "any"
+    }
+  ],
+  "start_url": "/19d2de9aa72d4e759ee141f2adf5017e/index.html",
+  "background_color": "#3367D6",
+  "display": "standalone",
+  "scope": "/19d2de9aa72d4e759ee141f2adf5017e/",
+  "theme_color": "#3367D6"
+}

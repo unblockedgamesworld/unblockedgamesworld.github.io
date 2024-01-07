@@ -1,0 +1,250 @@
+.gameh2 {
+    font-size: 18px;
+    font-weight: 700
+}
+
+.contentnumber li {
+    margin-bottom: 0
+}
+
+.gameh3 {
+    font-size: 16px;
+    font-weight: 700
+}
+
+.footer2 h4 {
+    font-weight: 400;
+    text-transform: uppercase;
+    color: #fff;
+    font-size: 18px
+}
+
+.footer2 a {
+    color: #f7d900
+}
+
+.footer1 {
+    color: #fff;
+    text-align: left
+}
+
+.homelink a {
+    color: #000;
+    font-size: 16px
+}
+
+.footerlink a {
+    color: #fff;
+    font-size: 12px
+}
+
+.footer3 {
+    text-transform: uppercase;
+    color: #fff;
+    font-weight: 400;
+    font-size: 18px
+}
+
+.footer3ul a {
+    color: #fff
+}
+
+.footer3ul {
+    text-align: left;
+    list-style-type: none
+}
+
+.footer3ul i {
+    margin-right: 10px
+}
+
+.lineverticle {
+    color: #fff
+}
+
+#mainNav {
+    position: fixed!important
+}
+
+.navbar-brand {
+    margin: 0 auto
+}
+
+body {
+    margin-top: 75px!important
+}
+
+form.search-bar {
+    position: relative
+}
+
+.autoSuggest_cont {
+    display: none;
+    position: absolute;
+    top: 42px;
+    z-index: 999;
+    background: #000;
+    width: 400px;
+    right: 0;
+    border: 1px solid grey;
+    padding: 10px;
+    font-size: 14px;
+    color: #bbb;
+    border-radius: 4px
+}
+
+.gamecont {
+    margin-bottom: 7px
+}
+
+.game_image {
+    background-size: cover;
+    width: 70px;
+    height: 50px;
+    float: left;
+    border-radius: 5px
+}
+
+.game_txt {
+    width: calc(100% - 70px);
+    margin-top: 12px;
+    float: left
+}
+
+.game_txt_link {
+    padding-left: 15px
+}
+
+.game_txt_link:hover,.suggest_link:hover {
+    color: #4db2ec
+}
+
+.suggest_link {
+    text-decoration: none;
+    color: #bbb
+}
+
+ul.hidden-links {
+    height: 600px;
+    overflow-y: auto
+}
+
+.navbar-brand {
+    margin: 0 auto
+}
+
+.nav-categories {
+    position: fixed;
+    top: 86px;
+    background: #fb3508e0;
+    width: 100%;
+    z-index: 990;
+    padding: 0
+}
+
+.loginLink {
+    padding: 6px 12px!important;
+    background: #4cb9fb;
+    border-radius: 50px;
+    margin-left: 10px;
+    font-size: 12px
+}
+
+.loginLink svg {
+    height: 20px;
+    width: 20px;
+    margin-right: 0;
+    fill: #fff
+}
+
+.ShareBtn {
+    font-weight: 600;
+    border-radius: 29px;
+    padding: 4px 13px;
+    line-height: 1.45;
+    background-color: #000!important;
+    border-color: #000!important
+}
+
+.ShareBtn svg {
+    fill: #fff;
+    width: 20px;
+    height: 20px;
+    margin-right: 3px
+}
+
+.ShareCloseBtn {
+    border-radius: 28px;
+    cursor: pointer;
+    font-weight: 800;
+    font-size: 11px;
+    box-sizing: border-box;
+    background: #000!important;
+    color: #f9faff;
+    padding: 0!important;
+    width: 30px;
+    min-width: 30px;
+    height: 30px;
+    top: 5px;
+    position: absolute;
+    right: 5px;
+    border: 4px solid #fff!important;
+    opacity: 1
+}
+
+.ShareCloseBtn:hover {
+    opacity: 1!important
+}
+
+.ShareCloseBtn svg {
+    fill: #fff;
+    width: 17px;
+    height: 18px
+}
+
+#ShareModal_title {
+    margin: 0 auto
+}
+
+#ShareModal_main .modal-body {
+    text-align: center
+}
+
+#ShareModal_main .modal-header {
+    border: none
+}
+
+.Copied {
+    display: none;
+    color: green;
+    font-weight: 600;
+    text-align: center
+}
+
+.gamebullet li {
+    padding: 5px
+}
+
+.appstore {
+    width: 126px;
+    height: auto
+}
+
+.chromebtn {
+    width: 150px
+}
+
+#moreg {
+    display: none
+}
+
+#toggle-button {
+    background-color: transparent;
+    outline: none;
+    margin-left: 5px
+}
+
+#toggle-button:focus {
+    outline: none;
+    box-shadow: none
+}

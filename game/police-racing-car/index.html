@@ -1,0 +1,28 @@
+
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <title>Unity WebGL Player | Police Racing Car</title>
+    <link rel="shortcut icon" href="TemplateData/favicon.ico">
+    <link rel="stylesheet" href="TemplateData/style.css">
+    <script src="TemplateData/UnityProgress.js"></script>
+    <script src="Build/UnityLoader.js"></script>
+    <script>
+      var gameInstance = UnityLoader.instantiate("gameContainer", "Build/Police Racing Car.json", {onProgress: UnityProgress});
+    </script>
+  </head>
+ 
+
+<body bgcolor="#1E1E1E">
+    <div class="webgl-content">
+       <div id="gameContainer" style="width: 750px; height: 520px"></div>
+        <div class="footer"><a target="_blank" href="https://www.y8game.github.io/" title="More Games"><img src="TemplateData/bestcrazygames.png" width="200" height="40" style="cursor: pointer;"  title="" alt="More Games"></a>
+        <div style="cursor: pointer;" class="fullscreen" onclick="gameInstance.SetFullscreen(1)"></div>
+        <div class="title"><a target="_blank" href="https://www.y8game.github.io/" title="More Games"><img src="TemplateData/moregames.png" width="120" height="40" style="cursor: pointer;"  title="" alt="More Games"></a> </div>
+      </div>
+    </div>
+    <script type="text/javascript" src="../../js/ubg235_client_v1_1.js"></script>
+  </body>
+</html>

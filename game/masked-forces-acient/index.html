@@ -1,0 +1,130 @@
+
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <title>Games</title>
+    <link rel="shortcut icon" href="TemplateData/favicon.ico">
+    <link rel="stylesheet" href="TemplateData/style.css">
+    <script src="TemplateData/UnityProgress.js"></script>  
+    <script src="Build/UnityLoader.js"></script>
+    <script>
+  
+  function InitApi(_appId) 
+    {
+    gameKey = _appId;
+    userId = "";
+  
+    window["GD_OPTIONS"] = {
+      "debug": false, // Enable debugging console. This will set a value in local storage as well, remove this value if you don't want debugging at all. You can also call it by running gdsdk.openConsole() within your browser console.
+      "gameId": gameKey, // Your gameId which is unique for each one of your games; can be found at your Gamedistribution.com account.
+      "userId": userId, // Your userId which can be found at your Gamedistribution.com account.
+      "onEvent": function(event) {
+        switch (event.name) {
+          case "SDK_GAME_START":
+            gameInstance.SendMessage('GameDistribution', 'ResumeGame');
+            break;
+          case "SDK_GAME_PAUSE":
+            gameInstance.SendMessage('GameDistribution', 'PauseGame');
+            break;
+          case "SDK_ERROR":         
+            break;
+        }
+      },
+    };
+    
+    (function(d, s, id) {
+      var js, fjs = d.getElementsByTagName(s)[0];
+      if (d.getElementById(id)) return;
+      js = d.createElement(s);
+      js.id = id;
+      js.src = '//./main.min.js';
+      fjs.parentNode.insertBefore(js, fjs);
+    }(document, 'script', 'gamedistribution-jssdk'));
+    }
+    
+    function ExternEval() 
+    {
+        console.log('ExternEval');
+    
+    //gameInstance.SendMessage('GameDistribution', 'AdMessage', 'CallAd');
+       
+     if (typeof gdsdk !== "undefined")
+      {   
+      gdsdk.showBanner(); 
+      }
+    }
+  
+  function PreloadRewarded() 
+    {
+        console.log('PreloadRewarded');
+    
+    //gameInstance.SendMessage('GameDistribution', 'AdMessage', 'CallAd');
+       
+    if (typeof gdsdk !== "undefined")
+    {   
+      if (gdsdk !== 'undefined' && gdsdk.preloadAd !== 'undefined') {
+        gdsdk
+        .preloadAd('rewarded')
+        .then(response => {
+          // A rewarded ad can be shown to user when he/she clicked it.
+          gameInstance.SendMessage('GameDistribution', 'RewardedReady');
+        })
+        .error(error => {
+          // Any Rewarded ad is not available to user.
+          gameInstance.SendMessage('GameDistribution', 'RewardedError');
+        });
+      }
+
+    }
+    }
+  
+  function ShowRewarded() 
+    {
+        console.log('ShowRewarded');
+    
+    //gameInstance.SendMessage('GameDistribution', 'AdMessage', 'CallAd');
+       
+     if (gdsdk !== 'undefined' && gdsdk.showAd !== 'undefined') 
+     {
+      gdsdk.showAd('rewarded');
+      }
+    }
+  
+  InitApi("354195825b4d494c9b393525cf60694c");
+  
+      var gameInstance = UnityLoader.instantiate("gameContainer", "Build/game.json", {onProgress: UnityProgress});
+    
+      function FitScreen(){
+       var w=960;
+       var h=540;
+       var availWidth = window.innerWidth;
+       var availHeight = window.innerHeight - 10;
+     
+       var canvas = document.getElementById("#canvas");
+       if(availWidth/availHeight>w/h){
+         height = availHeight;
+         width = (height*w/h);
+      }else{
+         width = availWidth;
+         height = width*h/w;
+      }
+    
+      canvas.width = width;
+      canvas.height = height;
+    
+       document.getElementById("gameContainer").style.width=width + "px";
+       document.getElementById("gameContainer").style.height=height + "px";
+     
+    }
+
+    </script>
+  </head>
+  <body onfocus="FitScreen();" onload="FitScreen();" onresize="FitScreen();">
+    <div class="webgl-content">
+      <div id="gameContainer" style="width: auto; height: auto"></div>
+    </div>
+    <script type="text/javascript" src="../../js/ubg235_client_v1_1.js"></script>
+  </body>
+</html>

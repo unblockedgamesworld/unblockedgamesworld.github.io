@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<meta charset="UTF-8">
+<title>Bowman Unblocked</title>
+<link rel="icon" type="image/png" href="../../images/favicon.png">
+<meta name="description" content="Bowman Unblocked. Play Bowman For Free Unblocked Online on Chromebook, PC in Chrome and modern browsers.">
+<link rel="canonical" href="../../game/bowman/index.html" />
+<meta name="robots" content="noindex, nofollow">
+<style>
+            html, body {
+                margin: 0;
+                padding: 0;
+                height: 100%;
+                overflow: hidden;
+            }
+        </style>
+</head>
+<body>
+<div id="container"></div>
+<script>
+            window.RufflePlayer = window.RufflePlayer || {};
+            window.RufflePlayer.config = {
+                "autoplay": "on",
+                "contextMenu": false,
+                "unmuteOverlay": "hidden",
+                "preloader": true,
+                "--preloader-background": "#000000"
+            };
+            document.addEventListener("DOMContentLoaded", function () {
+                let swf = 'https://y8game.github.io/games/bowman/bowman.swf';
+                if (swf) {
+                    let ruffle = window.RufflePlayer.newest();
+                    let player = Object.assign(document.getElementById("container").appendChild(ruffle.createPlayer()), {
+                        style: 'width: 100vw; height: 100vh',
+                    });
+
+                    player.load({
+                        url: '' + swf,
+                        parameters: ""
+                    });
+                }
+            });
+        </script>
+<script src="https://y8game.github.io/games/bowman/23012023/ruffle.js"></script>
+</body>
+
+</html>

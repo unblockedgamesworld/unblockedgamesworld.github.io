@@ -1,0 +1,14 @@
+{
+"companyName": "zuma studio",
+"productName": "Horror Hospital Granny",
+"dataUrl": "granny_webgl-z.data.unityweb",
+"wasmCodeUrl": "granny_webgl-z.wasm.code.unityweb",
+"wasmFrameworkUrl": "granny_webgl-z.wasm.framework.unityweb",
+"TOTAL_MEMORY": 536870912,
+"graphicsAPI": ["WebGL 2.0", "WebGL 1.0"],
+"webglContextAttributes": {"preserveDrawingBuffer": false},
+"backgroundUrl": "granny_webgl-z.jpg",
+"splashScreenStyle": "Dark",
+"backgroundColor": "#FFFFFF",
+"cacheControl": {"default": "must-revalidate"}
+}
